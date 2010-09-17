@@ -142,22 +142,10 @@
     <object-name>cables</object-name>
   </animation>
 
-  <!-- Une ombre pour OSG
+  <!-- Une ombre pour OSG -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/D510/Models/shadow.xml</path>
   </model>
-
-  <animation>
-    <type>select</type>
-    <object-name>shadowOSG</object-name>
-    <condition>
-      <equals>
-        <property>sim[0]/rendering/shadows-ai</property>
-        <value>true</value>
-      </equals>
-    </condition>
-  </animation> -->
 
   <!-- Interieur -->
   <model>
@@ -166,6 +154,81 @@
       <x-m> 0 </x-m>
       <y-m> 0 </y-m>
       <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Cranking effects -->
+  <!-- Left -->
+  <model>
+    <path>Aircraft/D510/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.149 </x-m>
+      <y-m> -0.562 </y-m>
+      <z-m>  0.387 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/D510/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.899 </x-m>
+      <y-m> -0.562 </y-m>
+      <z-m>  0.387 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/D510/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.503 </x-m>
+      <y-m> -0.562 </y-m>
+      <z-m>  0.387 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/D510/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.207 </x-m>
+      <y-m> -0.562 </y-m>
+      <z-m>  0.387 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>Aircraft/D510/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -3.149 </x-m>
+      <y-m>  0.562 </y-m>
+      <z-m>  0.387 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/D510/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.899 </x-m>
+      <y-m>  0.562 </y-m>
+      <z-m>  0.387 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/D510/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.503 </x-m>
+      <y-m>  0.562 </y-m>
+      <z-m>  0.387 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/D510/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> -2.207 </x-m>
+      <y-m>  0.562 </y-m>
+      <z-m>  0.387 </z-m>
     </offsets>
   </model>
 
@@ -192,7 +255,7 @@
 
   <!-- Patte de queue -->
   <model>
-    <path>Aircraft/D510/Models/Effects/ground/ground2.xml</path>
+    <path>Aircraft/D510/Models/Effects/ground/ground2.xml</path>   
     <offsets>
       <x-m>  3.218 </x-m>
       <y-m>  0.000 </y-m>
@@ -438,60 +501,60 @@
     </axis>
   </animation>
 
-  <!-- Ajout des effets lumineux
+  <!-- Ajout des effets lumineux -->
   <model>
     <path>Aircraft/D510/Models/light/beacon.xml</path>
     <offsets>
-      <x-m>  3.410 </x-m>
-      <y-m> -0.041 </y-m>
-      <z-m>  1.693 </z-m>
+      <x-m> 3.092 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.780 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/D510/Models/light/beacon.xml</path>
     <offsets>
-      <x-m> 3.410 </x-m>
-      <y-m> 0.041 </y-m>
-      <z-m> 1.693 </z-m>
+      <x-m> -0.686 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.387 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/D510/Models/light/RedLight.xml</path>
     <offsets>
-      <x-m> -1.468 </x-m>
-      <y-m> -5.087 </y-m>
-      <z-m> -0.119 </z-m>
+      <x-m> -1.652 </x-m>
+      <y-m> -6.031 </y-m>
+      <z-m> -0.036 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/D510/Models/light/GreenLight.xml</path>
     <offsets>
-      <x-m> -1.468 </x-m>
-      <y-m>  5.087 </y-m>
-      <z-m> -0.119 </z-m>
+      <x-m> -1.652 </x-m>
+      <y-m>  6.031 </y-m>
+      <z-m> -0.036 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/D510/Models/light/StrobeWhite.xml</path>
     <offsets>
-      <x-m> -1.478 </x-m>
-      <y-m> -5.087 </y-m>
-      <z-m> -0.119 </z-m>
+      <x-m> -1.642 </x-m>
+      <y-m> -6.031 </y-m>
+      <z-m> -0.036 </z-m>
     </offsets>
   </model>
 
   <model>
     <path>Aircraft/D510/Models/light/StrobeWhite.xml</path>
     <offsets>
-      <x-m> -1.478 </x-m>
-      <y-m>  5.087 </y-m>
-      <z-m> -0.119 </z-m>
+      <x-m> -1.642 </x-m>
+      <y-m>  6.031 </y-m>
+      <z-m> -0.036 </z-m>
     </offsets>
-  </model> -->
+  </model>
 
 </PropertyList>
 
