@@ -22,7 +22,8 @@
     <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
-    <object-name>axes</object-name>
+    <object-name>axesG</object-name>
+    <object-name>axesD</object-name>
     <object-name>axeGH</object-name>
     <object-name>axeGB</object-name>
     <object-name>axeDH</object-name>
@@ -56,7 +57,8 @@
     <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
-    <object-name>axes</object-name>
+    <object-name>axesG</object-name>
+    <object-name>axesD</object-name>
     <object-name>axeGH</object-name>
     <object-name>axeGB</object-name>
     <object-name>axeDH</object-name>
@@ -117,7 +119,8 @@
     <object-name>ailes2</object-name>
     <object-name>profondeur</object-name>
     <object-name>direction</object-name>
-    <object-name>axes</object-name>
+    <object-name>axesG</object-name>
+    <object-name>axesD</object-name>
     <object-name>axeGH</object-name>
     <object-name>axeGB</object-name>
     <object-name>axeDH</object-name>
@@ -423,10 +426,11 @@
     </axis>
   </animation>
 
-  <!-- Compression
+  <!-- Compression -->
   <animation>
     <name>RoueGauche</name>
-    <object-name>axeG</object-name>
+    <object-name>axeGB</object-name>
+    <object-name>cacheG</object-name>
     <object-name>roueG</object-name>
   </animation>
 
@@ -435,19 +439,38 @@
     <object-name>RoueGauche</object-name>
     <property>gear/gear[0]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 1 </ind><dep> 0.3 </dep></entry>
+      <entry><ind> 0 </ind><dep>  0.05 </dep></entry>
+      <entry><ind> 1 </ind><dep> -0.12 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
+      <x> -0.148490 </x>
+      <y>  0.000000 </y>
+      <z> -0.432114 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>axesG</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.5 </dep></entry>
+      <entry><ind> 1 </ind><dep> -3.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -2.724 </x1-m>
+      <y1-m> -0.329 </y1-m>
+      <z1-m> -0.205 </z1-m>
+      <x2-m> -1.655 </x2-m>
+      <y2-m> -0.400 </y2-m>
+      <z2-m> -0.272 </z2-m>
     </axis>
   </animation>
 
   <animation>
     <name>RoueDroite</name>
-    <object-name>axeD</object-name>
+    <object-name>axeDB</object-name>
+    <object-name>cacheD</object-name>
     <object-name>roueD</object-name>
   </animation>
 
@@ -456,15 +479,33 @@
     <object-name>RoueDroite</object-name>
     <property>gear/gear[1]/compression-norm</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
-      <entry><ind> 1 </ind><dep> 0.3 </dep></entry>
+      <entry><ind> 0 </ind><dep>  0.05 </dep></entry>
+      <entry><ind> 1 </ind><dep> -0.12 </dep></entry>
     </interpolation>
     <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
+      <x> -0.148490 </x>
+      <y>  0.000000 </y>
+      <z> -0.432114 </z>
     </axis>
-  </animation> -->
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>axesD</object-name>
+    <property>gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.5 </dep></entry>
+      <entry><ind> 1 </ind><dep> -3.0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.655 </x1-m>
+      <y1-m>  0.400 </y1-m>
+      <z1-m> -0.272 </z1-m>
+      <x2-m> -2.724 </x2-m>
+      <y2-m>  0.329 </y2-m>
+      <z2-m> -0.205 </z2-m>
+    </axis>
+  </animation>
 
   <!-- Rotation des roues lors du roulage -->
   <animation>
