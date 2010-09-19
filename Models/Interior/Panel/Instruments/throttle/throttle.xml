@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>throttle.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>support</object-name>
+    <object-name>sousthrottleL</object-name>
+    <object-name>sousthrottleR</object-name>
+    <object-name>throttleL</object-name>
+    <object-name>throttleR</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>throttleL</object-name>
+   <property>/controls/engines/engine[0]/throttle</property>
+   <interpolation>
+     <entry><ind> 0 </ind><dep>  0 </dep></entry>
+     <entry><ind> 1 </ind><dep> 30 </dep></entry>
+   </interpolation>
+   <center>
+     <x-m> -0.792 </x-m>
+     <y-m> -0.290 </y-m>
+     <z-m> -0.149 </z-m>
+   </center>
+   <axis>
+     <x> 0 </x>
+     <y>-1 </y>
+     <z> 0 </z>
+   </axis>
+  </animation>
+ 
+  <animation>
+    <type>rotate</type>
+    <object-name>throttleR</object-name>
+    <property>/controls/engines/engine/mixture/</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 30 </dep></entry>
+    </interpolation>
+    <center>
+     <x-m> -0.792 </x-m>
+     <y-m>  0.024 </y-m>
+     <z-m>  0.148 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

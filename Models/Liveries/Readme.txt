@@ -10,8 +10,13 @@ Thanks to him
 
 Patrouille-de-France-FlightGear
 
-These liveries were made by : Fly 2010
+These liveries were made by : Flavien BLANC 2010
 
 Thanks to him
 
+DC510_C1
+
+These liveries were made by : sohe 2010
+
+Thanks to him
 

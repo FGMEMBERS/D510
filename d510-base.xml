@@ -81,6 +81,7 @@
       <file>Aircraft/D510/Nasal/immat.nas</file>
       <file>Aircraft/D510/Nasal/liveries.nas</file>
       <file>Aircraft/D510/Nasal/light.nas</file>
+      <file>Aircraft/D510/Nasal/spoiler.nas</file>
     </d510>
     <doors>
       <file>Aircraft/D510/Nasal/doors.nas</file>
