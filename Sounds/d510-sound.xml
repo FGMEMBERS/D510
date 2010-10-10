@@ -6,7 +6,7 @@
 
     <crank> 
       <name>engstart</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 Start.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-Start.wav</path>
       <property>/engines/engine/cranking</property>
       <volume> 
         <property>/orientation/alpha-deg</property>
@@ -24,7 +24,7 @@
 
     <crank> 
       <name>cough</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 Engine Start2.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-Engine-Start2.wav</path>
       <property>/engines/engine/running</property>
       <volume> 
         <property>/orientation/alpha-deg</property>
@@ -43,7 +43,7 @@
     <engine> 
       <name>engine idle rpm</name>
       <mode>looped</mode>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 Engine Start.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-Engine-Start.wav</path>
       <condition> 
         <property>/engines/engine/running</property>
        <less-than> 
@@ -80,7 +80,7 @@
     <engine-2> 
       <name>engine low rpm</name>
       <mode>looped</mode>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 Engine Idle Slow motion.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-Engine-Idle-Slow-motion.wav</path>
       <condition> 
         <property>/engines/engine/running</property>
         <greater-than-equals> 
@@ -118,7 +118,7 @@
     <engine-4> 
       <name>engine high rpm</name>
       <mode>looped</mode>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 Engine Idle Slow motion.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-Engine-Idle-Slow-motion.wav</path>
       <condition> 
         <property>/engines/engine/running</property>
         <greater-than-equals> 
@@ -150,7 +150,7 @@
 
     <engine-0> 
       <name>engine shut down rpm</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 Engine Shutdown.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-Engine-Shutdown.wav</path>
       <condition> 
         <property>/engines/engine/running</property>
         <not> 
@@ -179,7 +179,7 @@
     <rumble> 
       <name>rumble</name>
       <mode>looped</mode>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 Wind.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-Wind.wav</path>
       <condition> 
         <or> 
           <property>/gear/gear[0]/wow</property>
@@ -208,7 +208,7 @@
   
     <squeal> 
       <name>squeal</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 Tire Squeal.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-Tire-Squeal.wav</path>
       <condition> 
         <or> 
           <property>/gear/gear[0]/wow</property>
@@ -269,7 +269,7 @@
     <wind-canopy-closed> 
       <name>wind</name>
       <mode>looped</mode>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 Wind.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-Wind.wav</path>
       <condition> 
         <equals> 
           <property>gear/canopy/position-norm</property>
@@ -302,7 +302,7 @@
     <wind-canopy-open> 
       <name>wind-loud</name>
       <mode>looped</mode>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 Wind.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-Wind.wav</path>
       <condition> 
         <greater-than> 
           <property>gear/canopy/position-norm</property>
@@ -362,7 +362,7 @@
 
     <click> 
       <name>mag left click down</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 OnOff.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-OnOff.wav</path>
       <condition> 
         <property>controls/engines/engine/mag-switch-left</property>
       </condition>
@@ -373,7 +373,7 @@
 
     <click> 
       <name>mag left click up</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 OnOff.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-OnOff.wav</path>
       <condition> 
         <not> 
           <property>controls/engines/engine/mag-switch-left</property>
@@ -386,7 +386,7 @@
 
     <click> 
       <name>mag right click down</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 OnOff.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-OnOff.wav</path>
       <condition> 
         <property>controls/engines/engine/mag-switch-right</property>
       </condition>
@@ -397,7 +397,7 @@
 
     <click> 
       <name>mag right click up</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 OnOff.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-OnOff.wav</path>
       <condition> 
         <not> 
           <property>controls/engines/engine/mag-switch-right</property>
@@ -410,7 +410,7 @@
 
     <click> 
       <name>rgs main click down</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 OnOff.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-OnOff.wav</path>
       <condition> 
         <property>controls/switches/gun-sight-main</property>
       </condition>
@@ -421,7 +421,7 @@
 
     <click> 
       <name>rgs main click up</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 OnOff.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-OnOff.wav</path>
       <condition> 
         <not> 
           <property>controls/switches/gun-sight-main</property>
@@ -435,7 +435,7 @@
     <guns> 
       <name>gunfire</name>
       <mode>looped</mode>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 Gunfire Cannon 20mm.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-Gunfire-Cannon-20mm.wav</path>
       <condition> 
         <property>controls/armament/trigger</property>
         <property>ai/submodels/submodel/count</property>
@@ -448,7 +448,7 @@
 
     <click> 
       <name>nav lights click down</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 OnOff.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-OnOff.wav</path>
       <condition> 
         <property>controls/lighting/nav-lights</property>
       </condition>
@@ -461,7 +461,7 @@
 
     <click> 
       <name>nav lights click up</name>
-      <path>Aircraft/D510/Sounds/BaBoOn D-510 OnOff.wav</path>
+      <path>Aircraft/D510/Sounds/BaBoOn-D-510-OnOff.wav</path>
       <condition> 
         <not> 
           <property>controls/lighting/nav-lights</property>

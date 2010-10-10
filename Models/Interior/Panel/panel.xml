@@ -11,13 +11,13 @@
     <!-- Objets transparents -->
   </animation>
 
-  <!-- ASI -->
+  <!-- Controlleur de vol -->
   <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/airspeed/airspeed.xml</path>
+    <path>Aircraft/D510/Models/Interior/Panel/Instruments/vion/vion.xml</path>
     <offsets>
-      <x-m> 0.015 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.020 </z-m>
+      <x-m>  0.017 </x-m>
+      <y-m> -0.039 </y-m>
+      <z-m> -0.007 </z-m>
     </offsets>
   </model>
 
@@ -25,19 +25,25 @@
   <model>
     <path>Aircraft/D510/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
-      <x-m> 0.015 </x-m>
-      <y-m> 0.070 </y-m>
-      <z-m> 0.000 </z-m>
+      <x-m>  0.026 </x-m>
+      <y-m> -0.125 </y-m>
+      <z-m>  0.002 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>    0 </pitch-deg>
+      <heading-deg> 19 </heading-deg>
     </offsets>
   </model>
 
-  <!-- VSI -->
+  <!-- ALT -->
   <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <path>Aircraft/D510/Models/Interior/Panel/Instruments/tach/tach.xml</path>
     <offsets>
-      <x-m>  0.015 </x-m>
-      <y-m> -0.080 </y-m>
-      <z-m>  0.010 </z-m>
+      <x-m>  0.026 </x-m>
+      <y-m> -0.125 </y-m>
+      <z-m> -0.058 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>    0 </pitch-deg>
+      <heading-deg> 19 </heading-deg>
     </offsets>
   </model>
 
@@ -45,9 +51,9 @@
   <model>
     <path>Aircraft/D510/Models/Interior/Panel/Instruments/clock/clock.xml</path>
     <offsets>
-      <x-m>  0.015 </x-m>
-      <y-m> -0.140 </y-m>
-      <z-m> -0.010 </z-m>
+      <x-m> 0.014 </x-m>
+      <y-m> 0.112 </y-m>
+      <z-m> 0.000 </z-m>
     </offsets>
   </model>
 
@@ -55,9 +61,19 @@
   <model>
     <path>Aircraft/D510/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m>  0.020 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.040 </z-m>
+      <x-m>  0.049 </x-m>
+      <y-m> -0.014 </y-m>
+      <z-m> -0.092 </z-m>
+    </offsets>
+  </model>
+
+  <!-- DIVERS -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Instruments/divers/divers.xml</path>
+    <offsets>
+      <x-m>  0.013 </x-m>
+      <y-m>  0.052 </y-m>
+      <z-m>  0.001 </z-m>
     </offsets>
   </model>
 

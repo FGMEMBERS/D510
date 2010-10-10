@@ -39,9 +39,9 @@
   <model>
     <path>Aircraft/D510/Models/Interior/Panel/panel.xml</path>
     <offsets>
-      <x-m> -0.926 </x-m>
-      <y-m> -0.010 </y-m>
-      <z-m>  0.709 </z-m>
+      <x-m> -0.980 </x-m>
+      <y-m>  0.006 </y-m>
+      <z-m>  0.696 </z-m>
     </offsets>
   </model>
   

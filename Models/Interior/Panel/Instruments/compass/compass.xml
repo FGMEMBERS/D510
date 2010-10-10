@@ -6,9 +6,14 @@
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>Case</object-name>
-    <object-name>Ball</object-name>
-    <object-name>visses</object-name>
+    <object-name>boite</object-name>
+    <object-name>oreilles</object-name>
+    <object-name>molettes</object-name>
+    <object-name>bouchon</object-name>
+    <object-name>compass</object-name>
+    <object-name>attaches</object-name>
+    <object-name>int</object-name>
+    <object-name>viseur</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitre</object-name>
@@ -28,7 +33,7 @@
 
   <animation>
     <type>material</type>
-    <object-name>Ball</object-name>
+    <object-name>compass</object-name>
     <emission>
       <red>   0.50 </red>
       <green> 0.25 </green>
@@ -39,12 +44,12 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>Ball</object-name>
+    <object-name>compass</object-name>
     <property>instrumentation/magnetic-compass/indicated-heading-deg</property>
     <center>
-     <x-m> -0.019 </x-m>
-     <y-m>  0.000 </y-m>
-     <z-m>  0.000 </z-m>
+     <x-m> 0.003 </x-m>
+     <y-m> 0.003 </y-m>
+     <z-m> 0.000 </z-m>
     </center>
     <axis>
       <x> 0 </x>
