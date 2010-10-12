@@ -32,13 +32,15 @@
 
     <multiplay>
       <chat_display>1</chat_display>
-      <generic>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
+      <generic> 
+        <int type="int">0</int>  <!-- 0 immat -->
+        <int type="int">0</int>  <!-- 1 immat -->
+        <int type="int">0</int>  <!-- 2 immat -->
+        <int type="int">0</int>  <!-- 3 immat -->
+        <int type="int">0</int>  <!-- 4 immat -->
+        <int type="int">0</int>  <!-- 5 immat -->
+        <int type="bool">0</int> <!-- 6 smoke -->
+        <int type="int">0</int>  <!-- 7 color -->
         <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
         <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
       </generic>
@@ -53,6 +55,14 @@
       <key>
         <name>e</name>
         <desc>Guns fire</desc>
+      </key>
+      <key>
+        <name>S</name>
+        <desc>Start smoke</desc>
+      </key>
+      <key>
+        <name>u</name>
+        <desc>Stop smoke</desc>
       </key>
     </help>
 
@@ -76,6 +86,14 @@
     <keyboard include="Nasal/d510-keyboard.xml"/>
   </input>
  
+  <controls>
+    <smoke alias="/sim/multiplay/generic/int[6]"/>
+    <color type="int" alias="/sim/multiplay/generic/int[7]">0</color>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+  </controls>
+
   <nasal>
     <d510>
       <file>Aircraft/D510/Nasal/immat.nas</file>

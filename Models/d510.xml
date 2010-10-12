@@ -160,6 +160,53 @@
     </offsets>
   </model>
 
+  <!-- Réservoir -->
+  <model>
+    <path>Aircraft/D510/Models/reservoir.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Fumée -->
+  <model>
+    <path>Aircraft/D510/Models/Effects/smoke/smokeB.xml</path>
+    <offsets>
+      <x-m>  3.180 </x-m>
+      <y-m> -0.032 </y-m>
+      <z-m>  0.053 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/D510/Models/Effects/smoke/smokeW.xml</path>
+    <offsets>
+      <x-m>  3.180 </x-m>
+      <y-m> -0.032 </y-m>
+      <z-m>  0.053 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/D510/Models/Effects/smoke/smokeR.xml</path>
+    <offsets>
+      <x-m>  3.180 </x-m>
+      <y-m> -0.032 </y-m>
+      <z-m>  0.053 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
   <!-- Cranking effects -->
   <!-- Left -->
   <model>
