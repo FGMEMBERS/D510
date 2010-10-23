@@ -20,13 +20,19 @@
    <object-name>throttleL</object-name>
    <property>/controls/engines/engine[0]/throttle</property>
    <interpolation>
-     <entry><ind> 0 </ind><dep>  0 </dep></entry>
-     <entry><ind> 1 </ind><dep> 30 </dep></entry>
+    <entry>
+     <ind>0.0</ind>
+     <dep>0</dep>
+    </entry>
+    <entry>
+     <ind>1.0</ind>
+     <dep>110</dep>
+    </entry>
    </interpolation>
    <center>
-     <x-m> -0.792 </x-m>
-     <y-m> -0.290 </y-m>
-     <z-m> -0.149 </z-m>
+     <x-m> -0.793 </x-m>
+     <y-m> -0.024 </y-m>
+     <z-m> 0.147 </z-m>
    </center>
    <axis>
      <x> 0 </x>
@@ -40,13 +46,19 @@
     <object-name>throttleR</object-name>
     <property>/controls/engines/engine/mixture/</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep>  0 </dep></entry>
-      <entry><ind> 1 </ind><dep> 30 </dep></entry>
+     <entry>
+      <ind>0.0</ind>
+      <dep>0</dep>
+     </entry>
+     <entry>
+      <ind>1.0</ind>
+      <dep>90</dep>
+     </entry>
     </interpolation>
     <center>
-     <x-m> -0.792 </x-m>
-     <y-m>  0.024 </y-m>
-     <z-m>  0.148 </z-m>
+     <x-m> -0.793 </x-m>
+     <y-m>  0.018 </y-m>
+     <z-m>  0.147 </z-m>
     </center>
     <axis>
       <x>  0 </x>
