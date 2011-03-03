@@ -67,13 +67,23 @@
     </offsets>
   </model>
 
-  <!-- DIVERS -->
+  <!-- INHALATEUR -->
   <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/divers/divers.xml</path>
+    <path>Aircraft/D510/Models/Interior/Panel/Instruments/inhalateur/inhalateur.xml</path>
     <offsets>
       <x-m>  0.013 </x-m>
       <y-m>  0.052 </y-m>
       <z-m>  0.001 </z-m>
+    </offsets>
+  </model>
+
+  <!-- EXTINCTEUR -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Instruments/extincteur/extincteur.xml</path>
+    <offsets>
+      <x-m>  0.015 </x-m>
+      <y-m>  0.185 </y-m>
+      <z-m> -0.032 </z-m>
     </offsets>
   </model>
 
