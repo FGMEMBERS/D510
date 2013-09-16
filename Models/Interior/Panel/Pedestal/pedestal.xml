@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>pedestal.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>pedestal</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ROBINET 3 POSITIONS -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Pedestal/Instruments/robinet/robinet.xml</path>
+    <offsets>
+      <x-m>  0.07212 </x-m>
+      <y-m> -0.04134 </y-m>
+      <z-m>  0.25977 </z-m>
+      <pitch-deg> -15 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- COMPTEUR DE MUNITIONS -->
+  <!-- CANON -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Pedestal/Instruments/cpt/cpt-canon.xml</path>
+    <offsets>
+      <x-m> 0.075 </x-m>
+      <y-m> 0.031 </y-m>
+      <z-m> 0.267 </z-m>
+      <pitch-deg> -15 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- MITRAILLEUSE GAUCHE -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Pedestal/Instruments/cpt/cpt-gun-left.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.089 </y-m>
+      <z-m>  0.052 </z-m>
+      <pitch-deg> -5 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- MITRAILLEUSE DROITE -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Pedestal/Instruments/cpt/cpt-gun-left.xml</path>
+    <offsets>
+      <x-m>  0.113 </x-m>
+      <y-m> -0.009 </y-m>
+      <z-m>  0.052 </z-m>
+      <pitch-deg> -5 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- MANOMETRE -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Pedestal/Instruments/man/man.xml</path>
+    <offsets>
+      <x-m> 0.112 </x-m>
+      <y-m> 0.081 </y-m>
+      <z-m> 0.056 </z-m>
+      <pitch-deg> -5 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- FUEL -->
+  <!-- WINGS -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Pedestal/Instruments/fuel/fuelwing.xml</path>
+    <offsets>
+      <x-m>  0.101 </x-m>
+      <y-m> -0.049 </y-m>
+      <z-m>  0.156 </z-m>
+      <pitch-deg> -10 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- FUSELAGE -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Pedestal/Instruments/fuel/fuelfuselage.xml</path>
+    <offsets>
+      <x-m> 0.101 </x-m>
+      <y-m> 0.049 </y-m>
+      <z-m> 0.156 </z-m>
+      <pitch-deg> -10 </pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

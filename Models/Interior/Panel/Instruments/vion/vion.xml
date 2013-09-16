@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -34,6 +34,16 @@
     <object-name>vitre</object-name>
     <object-name>tube</object-name>
   </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>vitre</object-name>
+    <object-name>tube</object-name>
+  </effect>
 
   <animation>
     <type>material</type>
@@ -104,7 +114,6 @@
     </axis>
   </animation>
   
-  
   <!--  Virage  -->
   <animation>
     <type>translate</type>
@@ -139,11 +148,6 @@
       <entry><ind> -3937 </ind><dep> -0.0165 </dep></entry>
       <entry><ind>  6561 </ind><dep>  0.0275 </dep></entry>
     </interpolation>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
     <axis>
       <x> 0 </x>
       <y> 0 </y>
@@ -153,19 +157,19 @@
   
   <!--   Clinomètre  -->
   <animation>
-    <type>translate</type>
+    <type>scale</type>
     <object-name>clino</object-name>
     <property>orientation/pitch-deg</property>
     <min> -15 </min>
     <max>  15 </max>
     <interpolation>
-      <entry><ind> -15 </ind><dep> -0.022 </dep></entry>
-      <entry><ind>  15 </ind><dep>  0.022 </dep></entry>
+      <entry><ind> -15 </ind><dep> 0.23 </dep></entry>
+      <entry><ind>  15 </ind><dep> 1.82 </dep></entry>
     </interpolation>
     <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m>-0 </z-m>
+      <x-m>  0.00099 </x-m>
+      <y-m>  0.04292 </y-m>
+      <z-m> -0.03755 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -175,4 +179,3 @@
   </animation>
 
 </PropertyList>
-
