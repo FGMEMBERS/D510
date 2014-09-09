@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <description>Dewoitine D 510 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>0.8</fuel-fraction>
+
+    <startup>
+     <splash-texture>Aircraft/D510/d510-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/D510/Sounds/d510-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/D510/Models/d510.xml</path>
+      <hide-tank alias="/sim/multiplay/generic/int[9]">1</hide-tank>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/D510/Models/Effects/guns/submodels.xml</path>
+    </submodels>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6"> 0 </int>                                           <!--  6 start smoke -->
+        <int type="int" n="7"> 0 </int>                                            <!--  7 particlepersec -->
+        <int type="int" n="8"> 0 </int>                                            <!--  8 Noze type -->
+        <int type="bool" n="9"> 1 </int>                                           <!--  9 Tank hide On/Off -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m">  0 </float>                     <!-- 11 altitude for MP shadow -->
+        <float n="3" alias="/position/altitude-ft">  0 </float>                    <!-- 11 altitude for smoke -->
+        <float n="8" alias="/controls/engines/engine[0]/throttle" />
+        <string n="0" type="string" />
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Dewoitine D 520</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+      <key>
+        <name>e</name>
+        <desc>Guns fire</desc>
+      </key>
+      <key>
+        <name>S</name>
+        <desc>Start smoke</desc>
+      </key>
+      <key>
+        <name>u</name>
+        <desc>Stop smoke</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/d510-menu.xml"/>
+
+  </sim>
+
+  <engines>
+    <engine>
+      <rpm type="double">700</rpm>
+    </engine>
+  </engines>
+
+  <input>
+    <keyboard include="Nasal/d510-keyboard.xml"/>
+  </input>
+ 
+  <controls>
+    <smoke alias="/sim/multiplay/generic/int[6]"/>
+    <color type="int" alias="/sim/multiplay/generic/int[7]">0</color>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+  </controls>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/D510/Nasal/doors.nas</file>
+    </doors>
+    <d510>
+      <file>Aircraft/D510/Nasal/immat.nas</file>
+      <file>Aircraft/D510/Nasal/liveries.nas</file>
+      <file>Aircraft/D510/Nasal/light.nas</file>
+    </d510>
+    <guns>
+      <file>Aircraft/D510/Nasal/weapons.nas</file>
+      <file>Aircraft/D510/Nasal/revi.nas</file>
+    </guns>
+  </nasal>
+
+</PropertyList>

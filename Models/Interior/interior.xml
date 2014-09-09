@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>inttourvitres</object-name>
+    <object-name>planchet</object-name>
+    <object-name>armature</object-name>
+    <object-name>seat</object-name>
+    
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intvitres</object-name>
+  </effect>
+
+  <!-- PILOT -->
+  <model>
+    <path>Aircraft/D510/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -0.752 </x-m>
+      <y-m> -0.008 </y-m>
+      <z-m>  0.405 </z-m>
+    </offsets>
+  </model>
+
+  <!-- PANEL -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -0.980 </x-m>
+      <y-m>  0.006 </y-m>
+      <z-m>  0.696 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- PEDESTAL -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Pedestal/pedestal.xml</path>
+    <offsets>
+      <x-m> -1.13841 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.13072 </z-m>
+    </offsets>
+  </model>
+
+  <!-- THROTTLE -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Instruments/throttle/throttle.xml</path>
+    <offsets>
+      <x-m> -0.972 </x-m>
+      <y-m> -0.280 </y-m>
+      <z-m>  0.314 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>

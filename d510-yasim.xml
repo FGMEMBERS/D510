@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Dewoitine D.510 - 2010 Emmanuel BARANGER
+     updated by Emmanuel BARANGER September 2013
+   
+     sources          : http://en.wikipedia.org/wiki/Dewoitine_D.500
+
+     wingspan         : 12.092 m   (   39 ft 8 in )
+     length           :  7.718 m   (   26 ft 1 in )
+     height           :  2.42 m    (    7 ft 11 in)
+     empty weight     :  1496 kg   ( 3298 lb      )
+     engine           : Hispano-Suiza 12Ycrs V12 engine, ( 860 hp at 16405 ft)
+     max speed        :   402 km/h (  217 kt      )
+-->
+<airplane mass="3298" >
+
+  <approach speed="80" aoa="6" >
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.05"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+    <control-setting axis="/controls/flight/spoiler" value="1"/>
+  </approach>
+  
+  <cruise speed="195" alt="5000" >
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.8"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="0.8" />
+    <control-setting axis="/controls/flight/spoiler" value="1"/>
+  </cruise>
+
+  <cockpit x="0.744" y="0" z="0.870"/>
+
+  <!-- Fuselage -->
+  <fuselage ax="3.537" ay=" 0.000" az=" 0.302" bx="-3.190" by=" 0.000" bz=" 0.230" width="0.856" taper="0.550" midpoint="0.357"/>
+  
+  <wing x="1.289" y="0.470" z="-0.195" 
+        chord="1.825" 
+        length="5.552" 
+        taper="0.60" 
+        dihedral="2" 
+        sweep="-2"
+        camber="0.02">
+        <stall aoa="22" width="1" peak="1.5"/>
+        <flap0 start="0.2" end="1" lift="1.2" drag="1.35"/>
+
+        <control-input axis="/controls/flight/aileron" control="FLAP0" split="true"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP0" split="true"/>
+
+        <control-output control="FLAP0" side="left" prop="surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP0" side="right" prop="surface-positions/right-aileron-pos-norm"/>
+  </wing>
+  
+  <hstab x="-2.910" y="0" z="0.612" 
+         chord="1.110" 
+          length="1.788" 
+         taper="0.38"
+         sweep="3"> 
+         <stall aoa="20" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.4" drag="1.1"/>
+
+         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-2.678" y="0" z="0.059" 
+         chord="2.319" 
+         length="1.807" 
+         taper="0.26" 
+         sweep="22">
+         <stall aoa="18" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.3" drag="1.1"/>
+
+         <control-input axis="/controls/flight/rudder" square="true" control="FLAP0" invert="true"/>
+         <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"  min="1" max="-1"/>
+  </vstab>
+
+  <!-- Engines   source            : http://en.wikipedia.org/wiki/Hispano-Suiza_12Y
+
+                 name              : Hispano-Suiza 12Y
+                 type              : Twelve-cylinder supercharged liquid-cooled 60° V12 engine
+                 power cruise      : 860 hp at 2400 rpm at 16405 ft
+                 weight            :    465 kg  (1025 lb)
+                 displacement      : 2199.9 in3 (36.05 l)
+                 compression       : 5.8:1
+  -->
+  <propeller x="2.605" y="0.0" z="0.327"
+             mass="1025"
+             moment="10"
+             radius="1.55"
+             cruise-speed="195"
+             cruise-alt="5000"
+             cruise-power="780"
+             cruise-rpm="2000"
+             takeoff-power="651"
+             takeoff-rpm="2600">
+             <actionpt x="3.63242" y="0" z="0.33068"/>
+             <piston-engine eng-power="860"
+                            eng-rpm="2400"
+                            displacement="2199"
+                            compression="5.8"/>
+             <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+             <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
+             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+             <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+  </propeller>
+
+  <!-- left main -->
+  <gear x="2.050" y="1.684" z="-1.774" 
+        compression="0.20"
+        sfric="0.8"
+        dfric="1"
+        damp="0.8">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+  </gear>
+
+  <!-- right main -->
+  <gear x="2.050" y="-1.684" z="-1.774"
+        compression="0.20"
+        sfric="0.8"
+        dfric="1"
+        damp="0.8">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+  </gear>
+
+  <!-- Tail wheel -->
+  <gear x="-3.218" y="0" z="-0.227"
+        compression="0.10"
+        castering="0"
+        sfric="0.8"
+        dfric="1.0">
+  </gear>
+
+  <!-- Fuel  -->  
+  <tank x="1.28" y=" 1.7" z="-0.27" capacity="217"/>
+  <tank x="2.25" y=" 0.0" z="-0.33" capacity="260"/>
+  <tank x="1.28" y="-1.7" z="-0.27" capacity="217"/>
+
+  <!-- Mass displacment
+  <ballast x="-3" y="0" z="-2" mass="800" /> -->
+
+</airplane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="10">
+      <label>Dewoitine D 510</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+      <item>
+        <label>Show/hide color tank</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/sim/model/hide-tank</property>
+        </binding>
+      </item>
+      <item>
+        <label>Blue smoke</label>
+        <binding>
+          <command>nasal</command>
+          <script>
+            var p = "sim/multiplay/generic/int[7]";
+            setprop(p, 0);
+          </script>
+        </binding>
+      </item>
+      <item>
+        <label>White smoke</label>
+        <binding>
+          <command>nasal</command>
+          <script>
+            var p = "sim/multiplay/generic/int[7]";
+            setprop(p, 1);
+          </script>
+        </binding>
+      </item>
+      <item>
+        <label>Red smoke</label>
+        <binding>
+          <command>nasal</command>
+          <script>
+            var p = "sim/multiplay/generic/int[7]";
+            setprop(p, 2);
+          </script>
+        </binding>
+      </item>
+      <item>
+        <label>Immatriculation</label>
+        <binding>
+          <command>nasal</command>
+          <script>d510.immat_dialog.toggle()</script>
+        </binding>
+      </item>
+    </menu>
+  </default>
+
+</PropertyList>
