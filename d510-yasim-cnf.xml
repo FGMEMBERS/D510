@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList include="d510-base.xml">
 
   <sim>
 
     <description>Dewoitine D 510 (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM)</author>
     <flight-model>yasim</flight-model>
     <aero>d510-yasim</aero>
 

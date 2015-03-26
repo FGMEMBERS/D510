@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList> 
 
@@ -147,7 +147,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine-4>
-<!--
+
     <engine-0> 
       <name>engine shut down rpm</name>
       <path>Aircraft/D510/Sounds/BaBoOn-D-510-Engine-Shutdown.wav</path>
@@ -175,7 +175,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine-0>
--->
+
     <rumble> 
       <name>rumble</name>
       <mode>looped</mode>

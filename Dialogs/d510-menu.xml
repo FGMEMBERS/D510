@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -17,7 +17,7 @@
         <label>Show/hide color tank</label>
         <binding>
           <command>property-toggle</command>
-          <property>/sim/model/hide-tank</property>
+          <property>/sim/model/hide-yoke</property>
         </binding>
       </item>
       <item>
@@ -61,3 +61,4 @@
   </default>
 
 </PropertyList>
+

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -27,15 +27,6 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <!-- working for Rembrandt -->
-  <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>vitre</object-name>
-  </effect>
-
   <animation>
     <type>material</type>
     <object-name>face</object-name>
@@ -54,7 +45,7 @@
     <type>rotate</type>
     <object-name>heures</object-name>
     <property>/instrumentation/clock/indicated-sec</property>
-    <factor> 0.00833333333333333 </factor>
+    <factor>0.00833333333333333</factor>
     <axis>
       <x> -1 </x>
       <y>  0 </y>
@@ -66,7 +57,7 @@
     <type>rotate</type>
     <object-name>minutes</object-name>
     <property>/instrumentation/clock/indicated-sec</property>
-    <factor> 0.1 </factor>
+    <factor>0.1</factor>
     <axis>
      <x> -1 </x>
      <y>  0 </y>
@@ -78,7 +69,7 @@
     <type>rotate</type>
     <object-name>secondes</object-name>
     <property>/instrumentation/clock/indicated-sec</property>
-    <factor> 6 </factor>
+    <factor>6</factor>
     <axis>
       <x> -1 </x>
       <y>  0 </y>

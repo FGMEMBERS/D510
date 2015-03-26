@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -28,17 +28,21 @@
       <x-m>  0.026 </x-m>
       <y-m> -0.125 </y-m>
       <z-m>  0.002 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>    0 </pitch-deg>
       <heading-deg> 19 </heading-deg>
     </offsets>
   </model>
 
-  <!-- TACH -->
+  <!-- ALT -->
   <model>
     <path>Aircraft/D510/Models/Interior/Panel/Instruments/tach/tach.xml</path>
     <offsets>
       <x-m>  0.026 </x-m>
       <y-m> -0.125 </y-m>
       <z-m> -0.058 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>    0 </pitch-deg>
       <heading-deg> 19 </heading-deg>
     </offsets>
   </model>
@@ -57,9 +61,19 @@
   <model>
     <path>Aircraft/D510/Models/Interior/Panel/Instruments/compass/compass.xml</path>
     <offsets>
-      <x-m>  0.052 </x-m>
+      <x-m>  0.049 </x-m>
       <y-m> -0.014 </y-m>
       <z-m> -0.092 </z-m>
+    </offsets>
+  </model>
+
+  <!-- INHALATEUR -->
+  <model>
+    <path>Aircraft/D510/Models/Interior/Panel/Instruments/inhalateur/inhalateur.xml</path>
+    <offsets>
+      <x-m>  0.013 </x-m>
+      <y-m>  0.052 </y-m>
+      <z-m>  0.001 </z-m>
     </offsets>
   </model>
 
@@ -70,130 +84,6 @@
       <x-m>  0.015 </x-m>
       <y-m>  0.185 </y-m>
       <z-m> -0.032 </z-m>
-    </offsets>
-  </model>
-
-  <!-- DIVERS -->
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/divers/divers.xml</path>
-    <offsets>
-      <x-m> 0.014 </x-m>
-      <y-m> 0.053 </y-m>
-      <z-m> 0.000 </z-m>
-    </offsets>
-  </model>
-
-  <!-- TEMPERATURE -->
-  <!-- OIL -->
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/temp/oil/oil.xml</path>
-    <offsets>
-      <x-m>  0.059 </x-m>
-      <y-m> -0.224 </y-m>
-      <z-m> -0.040 </z-m>
-      <heading-deg> 19 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- WATER -->
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/temp/water/water.xml</path>
-    <offsets>
-      <x-m>  0.059 </x-m>
-      <y-m> -0.224 </y-m>
-      <z-m> -0.085 </z-m>
-      <heading-deg> 19 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- PRESSION -->
-  <!-- OIL -->
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/psi/oil/oil.xml</path>
-    <offsets>
-      <x-m>  0.044 </x-m>
-      <y-m> -0.179 </y-m>
-      <z-m> -0.040 </z-m>
-      <heading-deg> 19 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- OIL -->
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/psi/oil/oil.xml</path>
-    <offsets>
-      <x-m>  0.044 </x-m>
-      <y-m> -0.179 </y-m>
-      <z-m> -0.085 </z-m>
-      <heading-deg> 19 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- PRISES -->
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/prise/prise.xml</path>
-    <offsets>
-      <x-m>  0.01292 </x-m>
-      <y-m>  0.10073 </y-m>
-      <z-m> -0.05016 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/prise/prise.xml</path>
-    <offsets>
-      <x-m>  0.01292 </x-m>
-      <y-m>  0.12016 </y-m>
-      <z-m> -0.05016 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/prise/prise.xml</path>
-    <offsets>
-      <x-m>  0.01292 </x-m>
-      <y-m>  0.13967 </y-m>
-      <z-m> -0.05016 </z-m>
-    </offsets>
-  </model>
-
-  <!-- LIGHTS -->
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/lights/light.xml</path>
-    <offsets>
-      <x-m> 0.01388 </x-m>
-      <y-m> 0.10166 </y-m>
-      <z-m> 0.03631 </z-m>
-    </offsets>
-  </model>
-
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/lights/light.xml</path>
-    <offsets>
-      <x-m>  0.04288 </x-m>
-      <y-m> -0.17917 </y-m>
-      <z-m>  0.00314 </z-m>
-      <heading-deg> 19 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- MANETTE -->
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/divers/manette.xml</path>
-    <offsets>
-      <x-m>  0.02240 </x-m>
-      <y-m>  0.06376 </y-m>
-      <z-m> -0.06353 </z-m>
-    </offsets>
-  </model>
-
-  <!-- ANNEAU -->
-  <model>
-    <path>Aircraft/D510/Models/Interior/Panel/Instruments/divers/anneau.xml</path>
-    <offsets>
-      <x-m> 0.01388 </x-m>
-      <y-m> 0.15307 </y-m>
-      <z-m> 0.02791 </z-m>
     </offsets>
   </model>
 

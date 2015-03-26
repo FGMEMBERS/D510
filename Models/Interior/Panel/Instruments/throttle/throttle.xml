@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -6,22 +6,34 @@
 
   <animation>
     <!-- Objets opaques -->
-    <object-name>base</object-name>
-    <object-name>int</object-name>
-    <object-name>throttle</object-name>
-    <object-name>mixture</object-name>
+    <object-name>support</object-name>
+    <object-name>sousthrottleL</object-name>
+    <object-name>sousthrottleR</object-name>
+    <object-name>throttleL</object-name>
+    <object-name>throttleR</object-name>
 
     <!-- Objets transparents -->
   </animation>
 
   <animation>
    <type>rotate</type>
-   <object-name>throttle</object-name>
+   <object-name>throttleL</object-name>
    <property>/controls/engines/engine[0]/throttle</property>
    <interpolation>
-     <entry><ind> 0 </ind><dep>   0 </dep></entry>
-     <entry><ind> 1 </ind><dep> 100 </dep></entry>
+    <entry>
+     <ind>0.0</ind>
+     <dep>0</dep>
+    </entry>
+    <entry>
+     <ind>1.0</ind>
+     <dep>110</dep>
+    </entry>
    </interpolation>
+   <center>
+     <x-m> -0.793 </x-m>
+     <y-m> -0.024 </y-m>
+     <z-m> 0.147 </z-m>
+   </center>
    <axis>
      <x> 0 </x>
      <y>-1 </y>
@@ -31,12 +43,23 @@
  
   <animation>
     <type>rotate</type>
-    <object-name>mixture</object-name>
+    <object-name>throttleR</object-name>
     <property>/controls/engines/engine/mixture/</property>
     <interpolation>
-      <entry><ind> 0 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1 </ind><dep> 100 </dep></entry>
+     <entry>
+      <ind>0.0</ind>
+      <dep>0</dep>
+     </entry>
+     <entry>
+      <ind>1.0</ind>
+      <dep>90</dep>
+     </entry>
     </interpolation>
+    <center>
+     <x-m> -0.793 </x-m>
+     <y-m>  0.018 </y-m>
+     <z-m>  0.147 </z-m>
+    </center>
     <axis>
       <x>  0 </x>
       <y> -1 </y>
